@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>Translation</title>
+<meta charset="utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500|Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{url_for("static", filename="css/vtranslate.css")}}">
+  <script src="{{ url_for("static", filename="js/jquery-3.4.0.js")}}"></script>
+  <script src="{{ url_for("static", filename="js/vtranslate.js")}}"></script>
+
+
+
+</head>
+
+<body>
+
+<div class="translation">
+    {% for line in g.converted %}
+    {{ line | safe }}
+    {%  endfor %}
+</div>
+
+
+ <div class="attribution">
+ <p class="author">
+  Attribution goes here
+  </p>
+   <p>Click any phrase to reveal or hide an English translation. </p>
+   </attribution>
+ 
+
+</body> </html>

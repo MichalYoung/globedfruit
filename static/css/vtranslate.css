@@ -1,0 +1,48 @@
+/* 
+ * Styles for line-by-line translation, to enable showing 
+ * or not showing the translated text. 
+ */
+
+body {
+    font-family: 'Open Sans',  sans-serif;
+    background-color: rgb(221, 234, 255);
+    padding-left: 10%; 
+}
+
+h1, h2, h3 { font-family: 'Alegreya Sans SC', sans-serif; }
+
+.es { color: black; display: inline; }
+.en { color: red; display: inline; }
+
+.chunk {
+   display: inline-flex;
+    flex-direction: column;
+}
+
+.es.translated {
+    border: 1px solid #485F6E;
+}
+
+.es:hover {
+     border: 1px solid #485F6E;
+}
+
+
+/* Class to toggle to reveal and hide a version
+ */
+div.hide { display: none;
+	      font-style: italic; 
+	      color: rgb(150, 50, 50);
+	    }
+
+.attribution {
+    padding-top: 8ex;
+    font-size: smaller; 
+}
+
+.attribution .author {
+    font-family: Avenir, "Myriad Pro", "Myriad",
+    "Lucida Grande", "Lucida Sans Unicode",
+    Tahoma, Geneva, sans-serif;
+}
+

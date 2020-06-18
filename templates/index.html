@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+  <!-- Web font loading must precede stylesheet link -->
+<link
+href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500|Open+Sans&display=swap"
+rel="stylesheet">
+  <link rel="stylesheet" href="{{url_for("static", filename="css/vtranslate.css")}}">
+  <script src="{{ url_for("static", filename="js/jquery-3.4.0.js")}}"></script>
+  <script src="{{ url_for("static", filename="js/vtranslate.js")}}"></script>
+</head>
+<body>
+<h1>Globed Fruit</h1>
+<h2>Poetry in Translation</h2>
+
+<ul>
+    <li><a href="/neruda">
+        <strong>Nada M&aacute;s</strong>
+        </a>, Pablo Neruda,
+    in <cite>We are Many</cite>, tr. 1967 by Alistair
+    Reid.</li>
+</ul>
+
+<p>This tiny demo is just designed to start a conversation
+about potential design directions.  It is not fully functional,
+    but illustrates the basic idea of displaying a piece of
+    literature in its original language with phrase-by-phrase
+    translations dynamically revealed.
+</p>
+</body>
+</html>
