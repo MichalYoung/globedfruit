@@ -14,19 +14,22 @@
 
 <body>
 
+<h1 class="title">
+    {{ g.converted.title | safe }}
+</h1>
+
 <div class="translation">
-    {% for line in g.converted %}
+    {% for line in g.converted.verse %}
     {{ line | safe }}
+        <br />
     {%  endfor %}
 </div>
 
-
- <div class="attribution">
+<div class="attribution">
  <p class="author">
-  Attribution goes here
-  </p>
-   <p>Click any phrase to reveal or hide an English translation. </p>
-   </attribution>
- 
+     {{ g.converted.author }} tr. {{  g.converted.translator }}
+ </p>
+</div > <!-- attribution -->
+<p>Click any phrase to reveal or hide an English translation. </p>
 
 </body> </html>

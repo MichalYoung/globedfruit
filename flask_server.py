@@ -41,7 +41,7 @@ def index():
 def neruda():
     return flask.render_template("nada_mas.html")
 
-@app.route("/as_it_should_be")
+@app.route("/attempt")
 def nada_mas():
     # This code is not working ... needs
     # complete rework

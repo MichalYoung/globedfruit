@@ -1,4 +1,6 @@
-title:  Nada M&aacute;as
+title:  Nada M&aacute;s
+author: Pablo Neruda
+translator: Alistair Reid
 
 o: De la verdad | fui solidario :
 t: with the truth | I made my contract :
